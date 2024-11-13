@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="icon" type="image/x-icon" href="/images/titleimage.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/titleimage.png" />
     <title>SafeRide</title>
-</head>
-<body>
-  <div class="logo"><a href="#"><img src="/images/titleimage.png"></a></div>
-  <nav id="navbar">
-    <ul>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a class="active" href="#home">Home</a></li>
-    </ul>
-  </nav>
-  <div class="titleimg">
-    <img src="/images/safe ride title.png">
-  </div>
-  <div id="divh1">
-    <h1 id="heltitle">Helment</h1>
-  </div>
- 
- <div id="helcrd"></div>
+  </head>
+  <body>
+    <div class="logo">
+      <a href="#"><img src="/images/titleimage.png" /></a>
+    </div>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a class="active" href="#home">Home</a></li>
+      </ul>
+    </nav>
+    <div class="titleimg">
+      <img src="/images/safe ride title.png" />
+    </div>
 
-    
+    <div id="divh1">
+      <h1 id="heltitle">Helment</h1>
+    </div>
+    <!-- /* drop-dowon button from w3school */ -->
+    <div id="buttonfilter">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">category</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">modulable</a>
+          <a href="#about">integral</a>
+          <a href="#contact">jett</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- cards div -->
+    <div id="helcrd"></div>
 
     <script
-    src="https://code.jquery.com/jquery-3.7.1.slim.js"
-    integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
-    crossorigin="anonymous"
-  ></script>
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
     <script src="../main.js"></script>
-</body>
+  </body>
 </html>

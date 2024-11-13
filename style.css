@@ -89,7 +89,7 @@ body {
     font-size: 2.4rem;
   }
   
-  p {
+  .wrapper  p {
     color: #fff;
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -184,4 +184,72 @@ footer {
   background-color:rgba(33, 33, 33, 0.7);
  
   
+}
+#helcrd{
+  display: flex;
+    justify-content: center;
+    
+}
+.wrapper1 {
+  width: 353px;
+  height: 490px;
+  
+}
+.wrapper1 img {
+    
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255, 0.255);
+
+}
+h3{
+  color: white;
+}
+/* drop-dowon button from w3school */
+.dropbtn {
+  background-color: rgba(33, 33, 33, 0.7);
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color:rgba(33, 33, 33, 0.7);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(33, 33, 33, 0.7);
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+#buttonfilter{
+  display: flex;
+  margin-left: 19px;
+
 }
