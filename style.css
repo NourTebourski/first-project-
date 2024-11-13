@@ -39,3 +39,18 @@ body {
   margin-top: 1px;
 
 }
+.titleimg img{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+ 
+}
+.titleimg{
+  display: flex;
+  justify-content: center;
+}
+#discimg img{
+  width: 100%;
+  height: 400px;
+  margin-top: 90px;
+}
