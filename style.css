@@ -253,3 +253,8 @@ h3{
   margin-left: 19px;
 
 }
+#colcrd{
+  display: flex;
+    justify-content: center;
+      
+}

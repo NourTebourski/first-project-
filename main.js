@@ -126,19 +126,67 @@ $(document).ready(function () {
             </div>
           `);
   });
-});
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
+
+  var clothescards = [
+    {
+      name: "FIVE GANTS",
+      price: "87,91",
+      type: "gants",
+      image:
+        "https://www.antilock.fr/28806-medium_default/five-gants-x-rider-waterproof-noir-jaune.jpg",
+    },
+    {
+      name: "THUNDER AIR",
+      price: "99,90",
+      type: "gants",
+      image:
+        "https://www.ixon.com/sites/default/files/styles/image334x615/public/pim_images/300211082-THUNDER-AIR-1015_001.png?itok=TwtB0jRM",
+    },
+    {
+      name: "Alpinestars ",
+      price: "154.19",
+      type: "Shoes",
+      image:
+        "https://fr.alpinestars.com/cdn/shop/files/2220825-fr_supertech-r-le-marquez-r04-vented.boots.png?v=1730393929&width=768",
+    },
+    {
+      name: "shark",
+      price: "154.00",
+      type: "veste",
+      image:
+        "https://www.super-bike.ch/149609-superlarge_default/vestes-moto-veste-moto-alpinestars-zaca-wp-noir-blanc.jpg",
+    },
+  ];
+  var colcontain = $("#colcrd");
+  each(clothescards, function (element, i) {
+    colcontain.append(`
+            <div class="cards">
+              <div class="container">
+                <div class="wrapper1">
+                  <img src="${element.image}" alt="${element.name}">
+                  <h1>${element.name}</h1>
+              <h3>${element.price}</h3>
+                  <h3>${element.type}</h3>
+                </div>
+                
+              </div>
+            </div>
+          `);
+  });
+
+  window.onclick = function (event) {
+    if (!event.target.matches(".dropbtn")) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
         }
       }
     }
-  }
+  };
+});
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
