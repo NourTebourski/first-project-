@@ -1,3 +1,4 @@
+// our each
 $(document).ready(function () {
   function each(coll, f) {
     if (Array.isArray(coll)) {
@@ -10,36 +11,7 @@ $(document).ready(function () {
       }
     }
   }
-
-  function filter(array, predicate) {
-    var acc = [];
-    each(array, function (element, i) {
-      if (predicate(element, i)) {
-        acc.push(element);
-      }
-    });
-    return acc;
-  }
-
-  function map(array, func) {
-    var acc = [];
-    each(array, function (element, i) {
-      acc.push(func(element, i));
-    });
-    return acc;
-  }
-
-  function reduce(array, f, acc) {
-    if (acc === undefined) {
-      acc = array[0];
-      array = array.slice(1);
-    }
-    each(array, function (element, i) {
-      acc = f(acc, element, i);
-    });
-    return acc;
-  }
-
+  // home card object
   var homecards = [
     {
       name: "Helment",
@@ -52,9 +24,9 @@ $(document).ready(function () {
         "https://m.media-amazon.com/images/I/81V1jR1UgeL._AC_UF894,1000_QL80_.jpg",
     },
   ];
-
+//  the variable tat contain our home cards
   var contain = $("#homecrd");
-
+//  lopping throw our array of object using the each that we learned
   each(homecards, function (element, i) {
     contain.append(`
             <div class="cards">
@@ -70,7 +42,7 @@ $(document).ready(function () {
             </div>
           `);
   });
-
+  // our functional buttons
   $("#button-0").click(function () {
     window.location.href = "http://127.0.0.1:5500/Articles/Helmets.html";
   });
@@ -78,7 +50,7 @@ $(document).ready(function () {
   $("#button-1").click(function () {
     window.location.href = "http://127.0.0.1:5500/Articles/Clothes.html";
   });
-
+//  helment card array of object
   var helmentcards = [
     {
       name: "LS2 FF901",
@@ -109,8 +81,9 @@ $(document).ready(function () {
         "https://www.goodtimecentre.ca/cdn/shop/files/31370551_2.webp?v=1702056209",
     },
   ];
-
+//  the variable that contain our helment Object
   var helcontain = $("#helcrd");
+  //  lopping throw our array of object using the each that we learned
   each(helmentcards, function (element, i) {
     helcontain.append(`
             <div class="cards">
@@ -126,7 +99,7 @@ $(document).ready(function () {
             </div>
           `);
   });
-
+// clothes array of objects
   var clothescards = [
     {
       name: "FIVE GANTS",
@@ -157,7 +130,9 @@ $(document).ready(function () {
         "https://www.super-bike.ch/149609-superlarge_default/vestes-moto-veste-moto-alpinestars-zaca-wp-noir-blanc.jpg",
     },
   ];
+  // our variable that contains the array of clothes object 
   var colcontain = $("#colcrd");
+   //  lopping throw our array of object using the each that we learned
   each(clothescards, function (element, i) {
     colcontain.append(`
             <div class="cards">
@@ -173,7 +148,7 @@ $(document).ready(function () {
             </div>
           `);
   });
-
+  /* drop-dowon button from w3school */ 
   window.onclick = function (event) {
     if (!event.target.matches(".dropbtn")) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
